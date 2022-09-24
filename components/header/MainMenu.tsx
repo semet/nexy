@@ -12,6 +12,8 @@ const MainMenu = () => {
 			// console.log(scrollPosition);
 		};
 		window.addEventListener("scroll", handleScroll);
+
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, [scrollPosition]);
 
 	return (
