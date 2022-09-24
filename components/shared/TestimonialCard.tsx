@@ -12,7 +12,7 @@ const TestimonialCard: React.FC<{
 }> = ({ person }) => {
 	return (
 		<div
-			className={`p-4 flex flex-col space-y-4 w-auto bg-white text-gray-700 rounded-lg shadow-lg ${person.rotate} hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer`}
+			className={`p-4 flex flex-col space-y-4 w-auto bg-white text-gray-700 rounded-lg shadow-lg ${person.rotate} hover:rotate-0 hover:scale-[1.05] transition-all duration-300 cursor-pointer`}
 		>
 			<div className="flex items-center space-x-4">
 				<img src={person.image} alt="Avatar" className="w-16 rounded-full" />
