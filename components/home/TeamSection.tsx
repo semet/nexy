@@ -30,7 +30,7 @@ const TeamSection = () => {
 			style={{ backgroundImage: "url('/images/bg/shape.png')" }}
 		>
 			<div className="text-center">
-				<h1 className="text-2xl font-semibold text-blue-700">Team</h1>
+				<h1 className="text-2xl font-semibold text-sky-700">Team</h1>
 				<h2 className="text-3xl font-semibold text-gray-700 my-4">
 					Meet our professional team members
 				</h2>
