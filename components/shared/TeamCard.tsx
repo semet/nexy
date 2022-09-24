@@ -32,7 +32,7 @@ const TeamCard: React.FC<Props> = ({ team }) => {
 	return (
 		<div className="flex flex-col bg-white shadow-md hover:shadow-lg hover:scale-[1.02] hover:bg-violet-700/[.25] transition-all duration-300 rounded-lg">
 			<div>
-				<img src={team.image} alt="" className="object-cover rounded-t-lg" />
+				<img src={team.image} alt="" className="object-cover w-full rounded-t-lg" />
 			</div>
 			<div className="flex flex-col items-center py-4 space-y-4 -mt-9">
 				<div className="flex justify-between space-x-6">
