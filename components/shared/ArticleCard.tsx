@@ -6,11 +6,12 @@ import {
 	MdCalendarViewMonth,
 	MdOutlineSupervisedUserCircle,
 } from "react-icons/md";
+import type { Posts } from "common";
 
-const ArticleCard = () => {
+const ArticleCard: React.FC<{ post: Posts }> = ({ post }) => {
 	return (
-		<article className="flex flex-row lg:flex-col w-full bg-white shadow-lg rounded-xl [&>div:nth-child(1)>img]:hover:scale-105 overflow-hidden">
-			<div className="min-w-[50%] lg:w-full">
+		<article className="flex flex-row lg:flex-col w-full bg-gray-300/10 shadow-lg rounded-xl [&>div:nth-child(1)>img]:hover:scale-105  [&>div:nth-child(1)>img]:hover:-skew-x-2 overflow-hidden">
+			<div className="min-w-[50%] lg:w-full overflow-hidden">
 				<img
 					src="/images/blog/bg1.jpg"
 					alt="Article"
@@ -18,21 +19,23 @@ const ArticleCard = () => {
 				/>
 			</div>
 			<div className="py-2 px-4 mt-4 flex flex-col space-y-4">
-				<h1 className="text-lg md:text-3xl lg:text-2xl font-semibold ">
-					Article Title Goes Here On The Top
+				<h1 className="text-lg md:text-2xl lg:text-2xl font-semibold ">
+					{post.title}
 				</h1>
-				<div className="flex items-center justify-start lg:justify-between space-x-3 md:space-x-6 text-gray-800">
-					<div className="flex items-center space-x-2 text-xs md:text-sm lg:text-xs">
+				<div className="flex items-center justify-start lg:justify-between space-x-3 md:space-x-6 text-gray-800  text-xs md:text-sm lg:text-xs xl:text-base">
+					<div className="flex items-center space-x-2">
 						<MdOutlineComment />
-						<span>5</span>
+						<p>
+							5 <span className="hidden xl:inline">Comments</span>
+						</p>
 					</div>
-					<div className="flex items-center space-x-2 text-xs md:text-sm lg:text-xs">
+					<div className="flex items-center space-x-2">
 						<MdCalendarViewMonth />
-						<span>{new Date().toDateString()}</span>
+						<span>{new Date(post.createdAt).toDateString()}</span>
 					</div>
-					<div className="flex items-center space-x-2 text-xs md:text-sm lg:text-xs">
+					<div className="flex items-center space-x-2">
 						<MdOutlineSupervisedUserCircle />
-						<span>Admin</span>
+						<span>{post.author}</span>
 					</div>
 				</div>
 				<p className="text-lg md:text-xl">
