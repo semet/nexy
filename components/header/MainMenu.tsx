@@ -2,19 +2,10 @@ import React, { useState, useEffect } from "react";
 import AppLogo from "./AppLogo";
 import MenuItems from "./MenuItems";
 import RightMenu from "./RightMenu";
+import { useScroll } from "../../hooks/scrollHook";
 
 const MainMenu = () => {
-	const [scrollPosition, setScrollPosition] = useState(0);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			setScrollPosition(window.scrollY);
-			// console.log(scrollPosition);
-		};
-		window.addEventListener("scroll", handleScroll);
-
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, [scrollPosition]);
+	const scrollPosition = useScroll();
 
 	return (
 		<div
