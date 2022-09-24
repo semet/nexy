@@ -20,7 +20,7 @@ const persons = [
       aliquid eos nesciunt quos ipsa hic eaque accusamus, molestias iste placeat
       blanditiis? Expedita, corrupti porro aut distinctio saepe voluptatibus
       adipisci!`,
-		rotate: "rotate-0 lg:-rotate-6",
+		rotate: "rotate-0 lg:-rotate-2",
 	},
 	{
 		name: "Irhas Al-Ansory",
@@ -40,7 +40,7 @@ const persons = [
       aliquid eos nesciunt quos ipsa hic eaque accusamus, molestias iste placeat
       blanditiis? Expedita, corrupti porro aut distinctio saepe voluptatibus
       adipisci!`,
-		rotate: "rotate-0 lg:rotate-1 -mt-6",
+		rotate: "rotate-0 lg:rotate-1",
 	},
 ];
 
