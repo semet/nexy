@@ -20,7 +20,7 @@ const menus = [
 	},
 	{
 		name: "Blog",
-		link: "#",
+		link: "/blog",
 	},
 	{
 		name: "Contact",
