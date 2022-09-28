@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.link-style {
+		@apply underline-offset-[9px] hover:underline hover:text-blue-600 hover:-translate-y-[0.1rem] transition-all ease-in-out;
+	}
+	.sidebar-tag {
+		@apply px-3 py-2 text-lg bg-gray-300 rounded-2xl inline-flex;
+	}
+}
