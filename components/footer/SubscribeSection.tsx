@@ -21,7 +21,7 @@ const SubscribeSection = () => {
 					<FaPaperPlane className="absolute text-indigo-200 text-9xl mx-auto right-20 top-10" />
 				</div>
 				<div className="mt-6 ml-2">
-					<h1 className="text-3xl lg:text-4xl font-semibold text-gray-700 font-mono">
+					<h1 className="text-2xl lg:text-4xl font-semibold text-gray-700 font-mono">
 						Don't miss anything from us !
 					</h1>
 				</div>
