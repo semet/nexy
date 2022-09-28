@@ -10,8 +10,6 @@ interface Props {
 const Layout: React.FC<Props> = ({ children }) => {
 	return (
 		<Fragment>
-			{/* Main Header */}
-			<MainHeader />
 			{/* content */}
 			{children}
 			{/* News Letter Subscription */}
