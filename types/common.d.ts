@@ -1,5 +1,5 @@
 declare module "common" {
-	interface Posts {
+	interface Post {
 		title: string;
 		image: string;
 		author: "Admin" | "User";
