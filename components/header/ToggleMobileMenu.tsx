@@ -5,7 +5,7 @@ import { useScroll } from "../../hooks/scrollHook";
 const ToggleMobileMenu = () => {
 	const scrollPosition = useScroll();
 	return (
-		<div className="inline-flex lg:hidden">
+		<button className="inline-flex lg:hidden">
 			<MdMenu
 				className={`text-4xl ${
 					scrollPosition >= 95
@@ -13,7 +13,7 @@ const ToggleMobileMenu = () => {
 						: "text-zinc-50  hover:text-gray-200"
 				}`}
 			/>
-		</div>
+		</button>
 	);
 };
 
