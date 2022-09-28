@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
+import MainHeader from "../components/header/MainHeader";
 import AboutUsSection from "../components/home/AboutUsSection";
 import ArticleSection from "../components/home/ArticleSection";
 import FeatureSection from "../components/home/FeatureSection";
@@ -16,6 +17,8 @@ const Home: NextPage = () => {
 				<title>Nexy</title>
 			</Head>
 			<Layout>
+				{/* Header */}
+				<MainHeader />
 				{/* Feature Section */}
 				<FeatureSection />
 				{/* About Us */}
