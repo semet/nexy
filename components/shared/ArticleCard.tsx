@@ -6,9 +6,9 @@ import {
 	MdCalendarViewMonth,
 	MdOutlineSupervisedUserCircle,
 } from "react-icons/md";
-import type { Posts } from "common";
+import type { Post } from "common";
 
-const ArticleCard: React.FC<{ post: Posts }> = ({ post }) => {
+const ArticleCard: React.FC<{ post: Post }> = ({ post }) => {
 	return (
 		<article className="flex flex-row lg:flex-col w-full bg-gray-300/10 shadow-lg rounded-xl [&>div:nth-child(1)>img]:hover:scale-105  [&>div:nth-child(1)>img]:hover:-skew-x-2 overflow-hidden">
 			<div className="min-w-[50%] lg:w-full overflow-hidden">

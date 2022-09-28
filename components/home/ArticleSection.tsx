@@ -1,8 +1,8 @@
 import React from "react";
 import ArticleCard from "../shared/ArticleCard";
-import type { Posts } from "common";
+import type { Post } from "common";
 
-const posts: Posts[] = [
+const posts: Post[] = [
 	{
 		title: "Lorem ipsum dolor sit amet consectetur",
 		image: "/images/blog/bg1.jpg",
