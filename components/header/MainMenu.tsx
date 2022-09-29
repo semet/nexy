@@ -9,7 +9,7 @@ const MainMenu = () => {
 
 	return (
 		<div
-			className={`flex justify-between items-center lg:items-end  px-16 lg:px-32 py-4 fixed w-full z-50 transition-all ease-in-out duration-500 ${
+			className={`flex justify-between items-center lg:items-end px-4 md:px-16 lg:px-32 py-4 fixed w-full z-50 transition-all ease-in-out duration-500 ${
 				scrollPosition >= 95 ? "bg-white shadow-md h-24" : "bg-gray-50/[.2] h-32"
 			}`}
 		>

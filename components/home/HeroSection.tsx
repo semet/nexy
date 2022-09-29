@@ -3,12 +3,12 @@ import { FiGithub } from "react-icons/fi";
 
 const HeroSection = () => {
 	return (
-		<div className="absolute flex flex-col space-y-8 top-[300px] lg:top-[350px] left-[60px] lg:left-[130px]">
+		<div className="absolute flex flex-col space-y-8  text-center left-[10px] right-[10px] top-[300px] md:text-left lg:top-[350px] md:left-[60px] md:top-[300px] lg:left-[130px]">
 			<h1 className="font-bold text-gray-700 text-4xl lg:text-7xl tracking-normal">
 				Welcome to Nexy
 			</h1>
-			<div className="flex items-center space-x-4">
-				<h2 className="ml-2 font-semibold italic text-xl lg:text-3xl text-gray-800 tracking-wide">
+			<div className="flex items-center flex-col md:flex-row space-x-4">
+				<h2 className="ml-2 mb-4 md:mb-0 font-semibold italic text-xl lg:text-3xl text-gray-800 tracking-wide">
 					enjoy the simplicity
 				</h2>
 				<a

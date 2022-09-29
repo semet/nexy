@@ -15,7 +15,7 @@ const FooterContainer = () => {
 			className="flex flex-col  bg-stone-50 bg-cover"
 			style={{ backgroundImage: "url('/images/shape/shape02.png')" }}
 		>
-			<div className="grid grid-cols-2 lg:grid-cols-4 px-16 lg:px-32">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 md:px-16 py-8 lg:px-32">
 				<div className="w-full space-y-4">
 					{/* Logo */}
 					<FooterLogo />
@@ -52,7 +52,7 @@ const FooterContainer = () => {
 						</a>
 					</div>
 				</div>
-				<div className="text-gray-800 mt-6 px-10">
+				<div className="text-gray-800 mt-6  lg:px-10">
 					<h3 className="text-xl font-bold">Site Menu</h3>
 					<ul className="list-inside space-y-4 mt-4">
 						<li className="link-style">
@@ -75,7 +75,7 @@ const FooterContainer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="text-gray-800 mt-6 px-4 lg:px-10">
+				<div className="text-gray-800 mt-6 lg:px-10">
 					<h3 className="text-xl font-bold">Our Service</h3>
 					<ul className="list-inside space-y-4 mt-4">
 						<li className="link-style">
@@ -92,7 +92,7 @@ const FooterContainer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="text-gray-800 mt-6 px-10">
+				<div className="text-gray-800 mt-6 lg:px-10">
 					<h3 className="text-xl font-bold">Contact Us</h3>
 					<div className="flex items-center space-x-2 mt-4">
 						<div className="p-2 rounded-full bg-rose-700">
