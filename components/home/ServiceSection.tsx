@@ -44,12 +44,12 @@ const ServiceSection = () => {
 					className="w-[400px] lg:w-[500px] lg:min-w-[400px] mx-auto object-cover"
 				/>
 			</div>
-			<div className="w-full lg:w-[60%] flex flex-col space-y-6 xl:space-y-4 pl-16 pr-4 py-4 text-center lg:text-left text-gray-800">
+			<div className="w-full lg:w-[60%] flex flex-col space-y-6 xl:space-y-4 md:px-16 lg:pl-16 lg:pr-4 py-4 text-center lg:text-left text-gray-800">
 				<h1 className="text-2xl font-semibold text-blue-700">Our Service</h1>
 				<h2 className="text-3xl font-semibold">
 					Custom IT Solutions For Your Successful Business
 				</h2>
-				<p className="text-xl lg:text-lg">
+				<p className="text-base lg:text-lg">
 					Solit is innovative and dynamic software development, outsourcing and
 					consulting company. We have proven success and experience in building Dedi
 					cated Development Teams of different sizes for us.
@@ -64,7 +64,7 @@ const ServiceSection = () => {
 							<h3 className="text-2xl lg:text-xl font-semibold text-sky-700">
 								{service.heading}
 							</h3>
-							<p className="text-xl lg:text-lg">{service.text}</p>
+							<p className="text-base lg:text-lg">{service.text}</p>
 						</div>
 					))}
 				</div>

@@ -10,7 +10,7 @@ import type { Post } from "common";
 
 const ArticleCard: React.FC<{ post: Post }> = ({ post }) => {
 	return (
-		<article className="flex flex-row lg:flex-col w-full bg-gray-300/10 shadow-lg rounded-xl [&>div:nth-child(1)>img]:hover:scale-105  [&>div:nth-child(1)>img]:hover:-skew-x-2 overflow-hidden">
+		<article className="flex flex-col w-full bg-gray-300/10 shadow-lg rounded-xl [&>div:nth-child(1)>img]:hover:scale-105  [&>div:nth-child(1)>img]:hover:-skew-x-2 overflow-hidden">
 			<div className="min-w-[50%] lg:w-full overflow-hidden">
 				<img
 					src="/images/blog/bg1.jpg"
@@ -38,7 +38,7 @@ const ArticleCard: React.FC<{ post: Post }> = ({ post }) => {
 						<span>{post.author}</span>
 					</div>
 				</div>
-				<p className="text-lg md:text-xl">
+				<p className="text-base md:text-xl">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sequi
 					accusamus aliquam illum qui! Eius quasi ducimus quae corporis ...{" "}
 					<a href="#" className="text-indigo-500">
